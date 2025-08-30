@@ -13,7 +13,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axiosInstance from "../utils/axiosInstance";
 import { useUser } from "../context/userContext";
 import GoogleLoginButton from "../component/GoogleLoginButton";
@@ -268,10 +268,11 @@ export default function Signup() {
 
             <Divider my="6" />
 
+            
             <Text fontSize="sm" textAlign="center" color="gray.600">
               Already have an account?{" "}
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 style={{
                   color: "#2563eb",
                   fontWeight: "500",
@@ -279,7 +280,7 @@ export default function Signup() {
                 }}
               >
                 Sign in
-              </a>
+              </Link>
             </Text>
           </Box>
         </motion.div>
