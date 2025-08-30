@@ -232,7 +232,7 @@ export default function Login() {
             <Text mt="6" textAlign="center" color="gray.600">
               Need an account?{" "}
               <a
-                href="/signup"
+                href="/"
                 style={{
                   color: "#2563eb",
                   fontWeight: "600",
