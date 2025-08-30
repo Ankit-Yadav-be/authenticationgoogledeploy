@@ -11,7 +11,7 @@ const GoogleLoginButton = () => {
 
   const handleSuccess = async (credentialResponse) => {
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/google", {
+      const res = await axios.post("https://authenticationgoogledeploy-vt48.vercel.app/api/auth/google", {
         token: credentialResponse.credential,
       });
 
